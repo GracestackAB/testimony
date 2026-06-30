@@ -525,6 +525,21 @@ export const en: Dictionary = {
         description:
           "Recognize verses and references. Train your memory with classic passages from Scripture.",
       },
+      verspussel: {
+        title: "Verse puzzle",
+        description:
+          "Fill in the blanks in well-known verses — word by word you learn the text as you play.",
+      },
+      "sant-eller-falskt": {
+        title: "True or false",
+        description:
+          "Decide whether statements about Bible passages are correct. Fast, tricky, and educational.",
+      },
+      minnespar: {
+        title: "Memory pairs",
+        description:
+          "Flip cards and match reference to verse — train memory and recognition together.",
+      },
       liknelser: {
         title: "Interactive parables",
         description:
@@ -604,6 +619,61 @@ export const en: Dictionary = {
       challengeAwaitingYou: "Your turn — play the round",
       challengeAwaitingThem: "Waiting for them to play",
       challengeDeclined: "Challenge declined",
+    },
+    versePuzzle: {
+      kicker: "Word by word",
+      title: "Verse puzzle",
+      subtitle: "Fill in the blanks — each correct word etches the verse deeper into memory.",
+      intro:
+        "You see a Bible verse with one or two blanks. Pick the right words from the word bank. After each round the full verse is shown so you learn along the way.",
+      start: "Start",
+      wordBank: "Words to choose from",
+      check: "Check answer",
+      questionOf: "Verse {current} of {total}",
+      score: "Correct: {score}",
+      correct: "Correct! You know the words.",
+      incorrect: "Not quite — but now you see the full verse.",
+      next: "Next verse",
+      seeResults: "See results",
+      doneTitle: "Well done!",
+      scoreSummary: "You filled in {score} of {total} verses perfectly.",
+      playAgain: "Play again",
+      backToGames: "Back to games",
+    },
+    trueFalse: {
+      kicker: "Quick knowledge",
+      title: "True or false",
+      subtitle: "Practice recognizing what passages are about — and what they are not.",
+      intro:
+        "Ten statements about well-known Bible passages. Tap true or false — you always get an explanation with the verse afterward.",
+      start: "Start",
+      trueBtn: "True",
+      falseBtn: "False",
+      questionOf: "Question {current} of {total}",
+      score: "Correct: {score}",
+      correct: "Correct!",
+      incorrect: "Wrong — but now you know.",
+      next: "Next",
+      seeResults: "See results",
+      doneTitle: "Done!",
+      scoreSummary: "You got {score} out of {total} correct.",
+      playAgain: "Play again",
+      backToGames: "Back to games",
+    },
+    memoryPairs: {
+      kicker: "Match up",
+      title: "Memory pairs",
+      subtitle: "Match Bible references to the right verse opening — train eye and memory together.",
+      intro:
+        "Flip two cards at a time. Find pairs where the reference (e.g. Rom 8:28) belongs to the right verse start. Six pairs — how few moves can you do?",
+      start: "Start",
+      pairsLeft: "{n} pairs left",
+      moves: "{n} moves",
+      hint: "Tip: say the reference aloud when you find a pair — it sticks better.",
+      doneTitle: "All pairs found!",
+      doneSummary: "You solved all pairs in {moves} moves.",
+      playAgain: "Play again",
+      backToGames: "Back to games",
     },
     storyAdventure: {
       kicker: "Step into the story",

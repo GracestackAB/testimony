@@ -9,7 +9,7 @@
     "lint": "next lint",
     "ingest:bible": "node scripts/ingest-bible-chunks.mjs",
     "ingest:bible:full": "node scripts/ingest-bible-helloao.mjs",
-    "test:bible": "npx tsx tests/bible/dates.test.ts && npx tsx tests/bible/verse-extract.test.ts && npx tsx tests/bible/rag-prompts.test.ts && npx tsx tests/games/bible-quiz.test.ts && npx tsx tests/games/story-adventure.test.ts && npx tsx tests/games/bible-quiz-social.test.ts",
+    "test:bible": "npx tsx tests/bible/dates.test.ts && npx tsx tests/bible/verse-extract.test.ts && npx tsx tests/bible/rag-prompts.test.ts && npx tsx tests/games/bible-quiz.test.ts && npx tsx tests/games/verse-puzzle.test.ts && npx tsx tests/games/true-false.test.ts && npx tsx tests/games/memory-pairs.test.ts && npx tsx tests/games/story-adventure.test.ts && npx tsx tests/games/bible-quiz-social.test.ts",
     "icons": "node scripts/generate-icons-svg.mjs"
   },
   "dependencies": {

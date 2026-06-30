@@ -525,6 +525,21 @@ export const sv: Dictionary = {
         description:
           "Känn igen verser och referenser. Träna minnet med klassiska passager från Bibeln.",
       },
+      verspussel: {
+        title: "Verspussel",
+        description:
+          "Fyll i luckorna i kända verser — ord för ord lär du dig texten medan du spelar.",
+      },
+      "sant-eller-falskt": {
+        title: "Sant eller falskt",
+        description:
+          "Avgör om påståenden om bibelställen stämmer. Snabbt, klurigt och lärorikt.",
+      },
+      minnespar: {
+        title: "Minnespar",
+        description:
+          "Vänd kort och para ihop referens med vers — träna både minne och igenkänning.",
+      },
       liknelser: {
         title: "Interaktiva liknelser",
         description:
@@ -604,6 +619,61 @@ export const sv: Dictionary = {
       challengeAwaitingYou: "Din tur — spela omgången",
       challengeAwaitingThem: "Väntar på att de spelar",
       challengeDeclined: "Utmaning avböjd",
+    },
+    versePuzzle: {
+      kicker: "Ord för ord",
+      title: "Verspussel",
+      subtitle: "Fyll i luckorna — varje rätt ord graverar versen djupare i minnet.",
+      intro:
+        "Du ser en bibelvers med en eller två luckor. Välj rätt ord från ordlistan. Efter varje runda visas hela versen så du lär dig under vägen.",
+      start: "Starta",
+      wordBank: "Ord att välja mellan",
+      check: "Kolla svar",
+      questionOf: "Vers {current} av {total}",
+      score: "Rätt: {score}",
+      correct: "Rätt! Du känner orden.",
+      incorrect: "Inte helt — men nu ser du hela versen.",
+      next: "Nästa vers",
+      seeResults: "Se resultat",
+      doneTitle: "Bra jobbat!",
+      scoreSummary: "Du fyllde i {score} av {total} verser helt rätt.",
+      playAgain: "Spela igen",
+      backToGames: "Tillbaka till spel",
+    },
+    trueFalse: {
+      kicker: "Snabb kunskap",
+      title: "Sant eller falskt",
+      subtitle: "Träna på att känna igen vad bibelställen handlar om — och vad de inte handlar om.",
+      intro:
+        "Tio påståenden om kända bibelpassager. Tryck sant eller falskt — du får alltid en förklaring med versen efteråt.",
+      start: "Starta",
+      trueBtn: "Sant",
+      falseBtn: "Falskt",
+      questionOf: "Fråga {current} av {total}",
+      score: "Rätt: {score}",
+      correct: "Rätt!",
+      incorrect: "Fel — men nu vet du svaret.",
+      next: "Nästa",
+      seeResults: "Se resultat",
+      doneTitle: "Klart!",
+      scoreSummary: "Du fick {score} av {total} rätt.",
+      playAgain: "Spela igen",
+      backToGames: "Tillbaka till spel",
+    },
+    memoryPairs: {
+      kicker: "Para ihop",
+      title: "Minnespar",
+      subtitle: "Matcha bibelreferens med rätt versöppning — träna både öga och minne.",
+      intro:
+        "Vänd två kort i taget. Hitta par där referensen (t.ex. Rom 8:28) hör till rätt versbörjan. Sex par — hur få drag klarar du?",
+      start: "Starta",
+      pairsLeft: "{n} par kvar",
+      moves: "{n} drag",
+      hint: "Tips: säg referensen högt när du hittar ett par — det fastnar bättre.",
+      doneTitle: "Alla par hittade!",
+      doneSummary: "Du löste alla par på {moves} drag.",
+      playAgain: "Spela igen",
+      backToGames: "Tillbaka till spel",
     },
     storyAdventure: {
       kicker: "Stig in i berättelsen",

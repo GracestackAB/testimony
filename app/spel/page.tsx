@@ -12,17 +12,14 @@ export async function generateMetadata() {
 }
 
 const GAMES = [
-  {
-    slug: "bibel-quiz",
-    emoji: "📖",
-    available: true,
-  },
-  {
-    slug: "liknelser",
-    emoji: "✨",
-    available: true,
-  },
+  { slug: "bibel-quiz", emoji: "📖", available: true },
+  { slug: "verspussel", emoji: "🧩", available: true },
+  { slug: "sant-eller-falskt", emoji: "⚖️", available: true },
+  { slug: "minnespar", emoji: "🃏", available: true },
+  { slug: "liknelser", emoji: "✨", available: true },
 ] as const;
+
+type GameSlug = (typeof GAMES)[number]["slug"];
 
 export default async function GamesPage() {
   const locale = await getLocale();
@@ -48,7 +45,7 @@ export default async function GamesPage() {
 
       <ul className="space-y-4">
         {GAMES.map((game) => {
-          const card = g.cards[game.slug as keyof typeof g.cards];
+          const card = g.cards[game.slug as GameSlug];
           if (!card) return null;
 
           if (!game.available) {

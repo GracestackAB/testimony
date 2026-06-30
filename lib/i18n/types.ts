@@ -455,7 +455,10 @@ export type Dictionary = {
     comingSoon: string;
     cards: {
       "bibel-quiz": { title: string; description: string };
-      "liknelser": { title: string; description: string };
+      verspussel: { title: string; description: string };
+      "sant-eller-falskt": { title: string; description: string };
+      minnespar: { title: string; description: string };
+      liknelser: { title: string; description: string };
     };
     bibleQuiz: {
       kicker: string;
@@ -527,6 +530,58 @@ export type Dictionary = {
       challengeAwaitingYou: string;
       challengeAwaitingThem: string;
       challengeDeclined: string;
+    };
+    versePuzzle: {
+      kicker: string;
+      title: string;
+      subtitle: string;
+      intro: string;
+      start: string;
+      wordBank: string;
+      check: string;
+      questionOf: string;
+      score: string;
+      correct: string;
+      incorrect: string;
+      next: string;
+      seeResults: string;
+      doneTitle: string;
+      scoreSummary: string;
+      playAgain: string;
+      backToGames: string;
+    };
+    trueFalse: {
+      kicker: string;
+      title: string;
+      subtitle: string;
+      intro: string;
+      start: string;
+      trueBtn: string;
+      falseBtn: string;
+      questionOf: string;
+      score: string;
+      correct: string;
+      incorrect: string;
+      next: string;
+      seeResults: string;
+      doneTitle: string;
+      scoreSummary: string;
+      playAgain: string;
+      backToGames: string;
+    };
+    memoryPairs: {
+      kicker: string;
+      title: string;
+      subtitle: string;
+      intro: string;
+      start: string;
+      pairsLeft: string;
+      moves: string;
+      hint: string;
+      doneTitle: string;
+      doneSummary: string;
+      playAgain: string;
+      backToGames: string;
     };
     storyAdventure: {
       kicker: string;
