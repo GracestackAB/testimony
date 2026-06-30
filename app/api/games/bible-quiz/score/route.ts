@@ -33,7 +33,12 @@ export async function POST(req: Request) {
   }
 
   const score = body.score;
-  if (!Number.isInteger(score) || score < 0 || score > QUIZ_TOTAL_QUESTIONS) {
+  if (
+    score === undefined ||
+    !Number.isInteger(score) ||
+    score < 0 ||
+    score > QUIZ_TOTAL_QUESTIONS
+  ) {
     return NextResponse.json({ error: "Invalid score" }, { status: 400 });
   }
 
