@@ -1,0 +1,834 @@
+[
+  {
+    "reference": "John 3:16",
+    "book": "John",
+    "testament": "nt",
+    "topic": "salvation",
+    "content": "For God so loved the world that He gave His one and onlySon, that everyone who believes in Him shall not perish but have eternal life.",
+    "svReference": "Johannes 3:16"
+  },
+  {
+    "reference": "Romans 8:28",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "God's plan",
+    "content": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose.",
+    "svReference": "Rom 8:28"
+  },
+  {
+    "reference": "John 14:6",
+    "book": "John",
+    "testament": "nt",
+    "topic": "the way of Jesus",
+    "content": "Jesus answered, “I am the way and the truth and the life. No one comes to the Father except through Me.",
+    "svReference": "Johannes 14:6"
+  },
+  {
+    "reference": "Matthew 28:18-20",
+    "book": "Matthew",
+    "testament": "nt",
+    "topic": "the great commission",
+    "content": "Then Jesus came to them and said, “All authority in heaven and on earth has been given to Me. Therefore go and make disciplesof all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey all that I have commanded you. And surely I am with you always, even to the end of the age.”",
+    "svReference": "Matt 28:18-20"
+  },
+  {
+    "reference": "Romans 3:23",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "sin",
+    "content": "for all have sinned and fall short of the glory of God,",
+    "svReference": "Rom 3:23"
+  },
+  {
+    "reference": "Romans 6:23",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "gift of life",
+    "content": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+    "svReference": "Rom 6:23"
+  },
+  {
+    "reference": "Ephesians 2:8-9",
+    "book": "Ephesians",
+    "testament": "nt",
+    "topic": "grace",
+    "content": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast.",
+    "svReference": "Ef 2:8-9"
+  },
+  {
+    "reference": "1 Corinthians 15:3-4",
+    "book": "1",
+    "testament": "nt",
+    "topic": "the resurrection",
+    "content": "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures,",
+    "svReference": "1 Kor 15:3-4"
+  },
+  {
+    "reference": "Philippians 2:5-11",
+    "book": "Philippians",
+    "testament": "nt",
+    "topic": "Christ's humility",
+    "content": "Let this mind be in you which was also in Christ Jesus: Who, existing in the form of God,did not consider equality with Godsomething to be grasped, but emptied Himself,taking the form of a servant,being made in human likeness. And being found in appearance as a man,He humbled Himselfand became obedient to death—even death on a cross. Therefore God exalted Him to the highest placeand gave Him the name above all names, that at the name of Jesus every knee should bow,in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord,to the glory of God the Father.",
+    "svReference": "Fil 2:5-11"
+  },
+  {
+    "reference": "Colossians 1:15-20",
+    "book": "Colossians",
+    "testament": "nt",
+    "topic": "Christ's supremacy",
+    "content": "The Son is the image of the invisible God, the firstborn over all creation. For in Him all things were created, things in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities. All things were created through Him and for Him. He is before all things, and in Him all things hold together. And He is the head of the body, the church; He is the beginning and firstborn from among the dead, so that in all things He may have preeminence. For God was pleased to have all His fullness dwell in Him, and through Him to reconcile to Himself all things, whether things on earth or things in heaven, by making peace through the blood of His cross.",
+    "svReference": "Kol 1:15-20"
+  },
+  {
+    "reference": "Hebrews 1:1-3",
+    "book": "Hebrews",
+    "testament": "nt",
+    "topic": "God's revelation",
+    "content": "On many past occasions and in many different ways, God spoke to our fathers through the prophets. But in these last days He has spoken to us by His Son,whom He appointed heir of all things, and through whom He made the universe. The Son is the radiance of God’s glory and the exact representation of His nature, upholding all things by His powerful word. After He had provided purification for sins, He sat down at the right hand of the Majesty on high.",
+    "svReference": "Hebr 1:1-3"
+  },
+  {
+    "reference": "Acts 2:38",
+    "book": "Acts",
+    "testament": "nt",
+    "topic": "repentance",
+    "content": "Peter replied, “Repent and be baptized, every one of you, in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.",
+    "svReference": "Apg 2:38"
+  },
+  {
+    "reference": "1 John 4:9-10",
+    "book": "1",
+    "testament": "nt",
+    "topic": "love",
+    "content": "This is how God’s love was revealed among us: God sent His one and onlySon into the world, so that we might live through Him. And love consists in this: not that we loved God, but that He loved us and sent His Son as the atoning sacrificefor our sins.",
+    "svReference": "1 Joh 4:9-10"
+  },
+  {
+    "reference": "Psalms 23:1",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "Herren herde",
+    "content": "The LORD is my shepherd;I shall not want.",
+    "svReference": "Ps 23:1"
+  },
+  {
+    "reference": "Isaiah 53:5",
+    "book": "Isaiah",
+    "testament": "gt",
+    "topic": "lidande tjänare",
+    "content": "But He was pierced for our transgressions,He was crushed for our iniquities;the punishment that brought us peace was upon Him,and by His stripes we are healed.",
+    "svReference": "Jes 53:5"
+  },
+  {
+    "reference": "Micah 5:2",
+    "book": "Micah",
+    "testament": "gt",
+    "topic": "Messias födelse",
+    "content": "But you, Bethlehem Ephrathah,who are small among the clansof Judah,out of you will come forth for MeOne to be ruler over Israel—One whose origins are of old,from the days of eternity.",
+    "svReference": "Mika 5:2"
+  },
+  {
+    "reference": "Genesis 1:1",
+    "book": "Genesis",
+    "testament": "gt",
+    "topic": "skapelsen",
+    "content": "In the beginning God created the heavens and the earth.",
+    "svReference": "1 Mos 1:1"
+  },
+  {
+    "reference": "John 1:1-3",
+    "book": "John",
+    "testament": "nt",
+    "topic": "Ordet",
+    "content": "In the beginning was the Word, and the Word was with God, and the Word was God. He was with God in the beginning. Through Him all things were made, and without Him nothing was made that has been made.",
+    "svReference": "Joh 1:1-3"
+  },
+  {
+    "reference": "Matthew 5:3-10",
+    "book": "Matthew",
+    "testament": "nt",
+    "topic": "saligprisningarna",
+    "content": "“Blessed are the poor in spirit,for theirs is the kingdom of heaven. Blessed are those who mourn,for they will be comforted. Blessed are the meek,for they will inherit the earth. Blessed are those who hunger and thirst for righteousness,for they will be filled. Blessed are the merciful,for they will be shown mercy. Blessed are the pure in heart,for they will see God. Blessed are the peacemakers,for they will be called sons of God. Blessed are those who are persecuted because of righteousness,for theirs is the kingdom of heaven.",
+    "svReference": "Matt 5:3-10"
+  },
+  {
+    "reference": "Romans 10:9",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "faith",
+    "content": "that if you confess with your mouth, “Jesus is Lord,” and believe in your heart that God raised Him from the dead, you will be saved.",
+    "svReference": "Rom 10:9"
+  },
+  {
+    "reference": "Matthew 11:28-30",
+    "book": "Matthew",
+    "testament": "nt",
+    "topic": "vila",
+    "content": "Come to Me, all you who are weary and burdened, and I will give you rest. Take My yoke upon you and learn from Me, for I am gentle and humble in heart, and you will find rest for your souls. For My yoke is easy and My burden is light.”",
+    "svReference": "Matt 11:28-30"
+  },
+  {
+    "reference": "James 1:5",
+    "book": "James",
+    "testament": "nt",
+    "topic": "wisdom",
+    "content": "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him.",
+    "svReference": "Jak 1:5"
+  },
+  {
+    "reference": "1 Peter 5:7",
+    "book": "1",
+    "testament": "nt",
+    "topic": "ångest",
+    "content": "Cast all your anxiety on Him, because He cares for you.",
+    "svReference": "1 Pet 5:7"
+  },
+  {
+    "reference": "Psalms 46:2",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "Gud är tillflykt",
+    "content": "Therefore we will not fear,though the earth is transformedand the mountains are toppledinto the depths of the seas,",
+    "svReference": "Ps 46:2"
+  },
+  {
+    "reference": "Psalms 121:1-2",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "hjälp från Herren",
+    "content": "I lift up my eyes to the hills.From where does my help come? My help comes from the LORD,the Maker of heaven and earth.",
+    "svReference": "Ps 121:1-2"
+  },
+  {
+    "reference": "2 Timothy 1:7",
+    "book": "2",
+    "testament": "nt",
+    "topic": "mod",
+    "content": "For God has not given us a spirit of fear,but of power, love, and self-control.",
+    "svReference": "2 Tim 1:7"
+  },
+  {
+    "reference": "Galatians 5:22-23",
+    "book": "Galatians",
+    "testament": "nt",
+    "topic": "Andens frukt",
+    "content": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law.",
+    "svReference": "Gal 5:22-23"
+  },
+  {
+    "reference": "1 Thessalonians 5:16-18",
+    "book": "1",
+    "testament": "nt",
+    "topic": "gratitude",
+    "content": "Rejoice at all times. Pray without ceasing. Give thanks in every circumstance, for this is God’s will for you in Christ Jesus.",
+    "svReference": "1 Tess 5:16-18"
+  },
+  {
+    "reference": "Matthew 6:33",
+    "book": "Matthew",
+    "testament": "nt",
+    "topic": "prioriteringar",
+    "content": "But seek first the kingdom of Godand His righteousness, and all these things will be added unto you.",
+    "svReference": "Matt 6:33"
+  },
+  {
+    "reference": "Luke 15:20",
+    "book": "Luke",
+    "testament": "nt",
+    "topic": "förlorade sonen",
+    "content": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him.",
+    "svReference": "Luk 15:20"
+  },
+  {
+    "reference": "John 10:10",
+    "book": "John",
+    "testament": "nt",
+    "topic": "liv i överflöd",
+    "content": "The thief comes only to steal and kill and destroy. I have come that they may have life, and have it in all its fullness.",
+    "svReference": "Joh 10:10"
+  },
+  {
+    "reference": "Romans 12:2",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "förnyelse",
+    "content": "Do not be conformed to this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what is the good, pleasing, and perfect will of God.",
+    "svReference": "Rom 12:2"
+  },
+  {
+    "reference": "Hebrews 11:1",
+    "book": "Hebrews",
+    "testament": "nt",
+    "topic": "faith",
+    "content": "Now faith is the assurance of what we hope for and the certainty of what we do not see.",
+    "svReference": "Hebr 11:1"
+  },
+  {
+    "reference": "Matthew 22:37-39",
+    "book": "Matthew",
+    "testament": "nt",
+    "topic": "största budet",
+    "content": "Jesus declared, “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’",
+    "svReference": "Matt 22:37-39"
+  },
+  {
+    "reference": "1 Corinthians 13:4-7",
+    "book": "1",
+    "testament": "nt",
+    "topic": "love",
+    "content": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no account of wrongs. Love takes no pleasure in evil, but rejoices in the truth. It bears all things, believes all things, hopes all things, endures all things.",
+    "svReference": "1 Kor 13:4-7"
+  },
+  {
+    "reference": "2 Corinthians 5:17",
+    "book": "2",
+    "testament": "nt",
+    "topic": "ny skapelse",
+    "content": "Therefore if anyone is in Christ, he is a new creation.The old has passed away. Behold, the new has come!",
+    "svReference": "2 Kor 5:17"
+  },
+  {
+    "reference": "Ephesians 6:10-11",
+    "book": "Ephesians",
+    "testament": "nt",
+    "topic": "andlig rustning",
+    "content": "Finally, be strong in the Lord and in His mighty power. Put on the full armor of God, so that you can make your stand against the devil’s schemes.",
+    "svReference": "Ef 6:10-11"
+  },
+  {
+    "reference": "Mark 9:24",
+    "book": "Mark",
+    "testament": "nt",
+    "topic": "faith",
+    "content": "Immediately the boy’s father cried out,“I do believe; help my unbelief!”",
+    "svReference": "Mark 9:24"
+  },
+  {
+    "reference": "Psalms 34:19",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "suffering",
+    "content": "Many are the afflictions of the righteous,but the LORD delivers him from them all.",
+    "svReference": "Ps 34:19"
+  },
+  {
+    "reference": "Psalms 119:105",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "Guds ord",
+    "content": "Your word is a lamp to my feetand a light to my path.",
+    "svReference": "Ps 119:105"
+  },
+  {
+    "reference": "Proverbs 3:5-6",
+    "book": "Proverbs",
+    "testament": "gt",
+    "topic": "förtroende",
+    "content": "Trust in the LORD with all your heart,and lean not on your own understanding; in all your ways acknowledge Him,and He will make your paths straight.",
+    "svReference": "Ords 3:5-6"
+  },
+  {
+    "reference": "Romans 5:8",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "Guds kärlek",
+    "content": "But God proves His love for us in this: While we were still sinners, Christ died for us.",
+    "svReference": "Rom 5:8"
+  },
+  {
+    "reference": "Matthew 7:7",
+    "book": "Matthew",
+    "testament": "nt",
+    "topic": "prayer",
+    "content": "Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened to you.",
+    "svReference": "Matt 7:7"
+  },
+  {
+    "reference": "James 4:8",
+    "book": "James",
+    "testament": "nt",
+    "topic": "närhet till Gud",
+    "content": "Draw near to God, and He will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded.",
+    "svReference": "Jak 4:8"
+  },
+  {
+    "reference": "1 John 1:9",
+    "book": "1",
+    "testament": "nt",
+    "topic": "forgiveness",
+    "content": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
+    "svReference": "1 Joh 1:9"
+  },
+  {
+    "reference": "Matthew 6:9-13",
+    "book": "Matthew",
+    "testament": "nt",
+    "topic": "Herrens bön",
+    "content": "So then, this is how you should pray:‘Our Father in heaven,hallowed be Your name. Your kingdom come,Your will be done,on earth as it is in heaven. Give us this day our daily bread. And forgive us our debts,as we also have forgiven our debtors. And lead us not into temptation,but deliver us from the evil one.’",
+    "svReference": "Matt 6:9-13"
+  },
+  {
+    "reference": "Jeremiah 29:11",
+    "book": "Jeremiah",
+    "testament": "gt",
+    "topic": "God's plan",
+    "content": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope.",
+    "svReference": "Jer 29:11"
+  },
+  {
+    "reference": "Nahum 1:7",
+    "book": "Nahum",
+    "testament": "gt",
+    "topic": "tillflykt",
+    "content": "The LORD is good,a stronghold in the day of distress;He cares for those who trust in Him.",
+    "svReference": "Nah 1:7"
+  },
+  {
+    "reference": "Colossians 3:23",
+    "book": "Colossians",
+    "testament": "nt",
+    "topic": "tjänst",
+    "content": "Whatever you do, work at it with your whole being, as for the Lord and not for men,",
+    "svReference": "Kol 3:23"
+  },
+  {
+    "reference": "Psalms 51:10",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "renande",
+    "content": "Create in me a clean heart, O God,and renew a right spirit within me.",
+    "svReference": "Ps 51:10"
+  },
+  {
+    "reference": "Isaiah 9:6",
+    "book": "Isaiah",
+    "testament": "gt",
+    "topic": "Messias",
+    "content": "For unto us a child is born,unto us a son is given,and the government will be upon His shoulders.And He will be calledWonderful Counselor, Mighty God,Everlasting Father, Prince of Peace.",
+    "svReference": "Jes 9:6"
+  },
+  {
+    "reference": "Isaiah 55:6-7",
+    "book": "Isaiah",
+    "testament": "gt",
+    "topic": "repentance",
+    "content": "Seek the LORD while He may be found;call on Him while He is near. Let the wicked man forsake his wayand the unrighteous man his thoughts;let him return to the LORD,that He may have compassion,and to our God,for He will freely pardon.",
+    "svReference": "Jes 55:6-7"
+  },
+  {
+    "reference": "Isaiah 40:31",
+    "book": "Isaiah",
+    "testament": "gt",
+    "topic": "kraft",
+    "content": "But those who wait upon the LORD will renew their strength;they will mount up with wings like eagles;they will run and not grow weary,they will walk and not faint.",
+    "svReference": "Jes 40:31"
+  },
+  {
+    "reference": "Genesis 12:2-3",
+    "book": "Genesis",
+    "testament": "gt",
+    "topic": "förbund",
+    "content": "I will make you into a great nation,and I will bless you;I will make your name great,so that you will be a blessing. I will bless those who bless youand curse those who curse you;and all the families of the earthwill be blessed through you.”",
+    "svReference": "1 Mos 12:2-3"
+  },
+  {
+    "reference": "Exodus 20:3",
+    "book": "Exodus",
+    "testament": "gt",
+    "topic": "avgudadyrkan",
+    "content": "You shall have no other gods before Me.",
+    "svReference": "2 Mos 20:3"
+  },
+  {
+    "reference": "Joshua 1:9",
+    "book": "Joshua",
+    "testament": "gt",
+    "topic": "mod",
+    "content": "Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.”",
+    "svReference": "Jos 1:9"
+  },
+  {
+    "reference": "1 Samuel 16:7",
+    "book": "1",
+    "testament": "gt",
+    "topic": "Guds blick",
+    "content": "But the LORD said to Samuel, “Do not consider his appearance or height, for I have rejected him; the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart.”",
+    "svReference": "1 Sam 16:7"
+  },
+  {
+    "reference": "2 Chronicles 7:14",
+    "book": "2",
+    "testament": "gt",
+    "topic": "prayer",
+    "content": "and if My people who are called by My name humble themselves and pray and seek My face and turn from their wicked ways, then I will hear from heaven, forgive their sin, and heal their land.",
+    "svReference": "2 Krön 7:14"
+  },
+  {
+    "reference": "Job 19:25",
+    "book": "Job",
+    "testament": "gt",
+    "topic": "lösen",
+    "content": "But I know that my Redeemerlives,and in the end He will stand upon the earth.",
+    "svReference": "Job 19:25"
+  },
+  {
+    "reference": "Psalms 27:1",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "förtroende",
+    "content": "The LORD is my light and my salvation—whom shall I fear?The LORD is the stronghold of my life—whom shall I dread?",
+    "svReference": "Ps 27:1"
+  },
+  {
+    "reference": "Psalms 37:4",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "glädje",
+    "content": "Delight yourself in the LORD,and He will give you the desires of your heart.",
+    "svReference": "Ps 37:4"
+  },
+  {
+    "reference": "Psalms 91:1",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "tillflykt",
+    "content": "He who dwells in the shelter of the Most Highwill abide in the shadow of the Almighty.",
+    "svReference": "Ps 91:1"
+  },
+  {
+    "reference": "Psalms 139:13-14",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "skapelse",
+    "content": "For You formed my inmost being;You knit me together in my mother’s womb. I praise You,for I am fearfully and wonderfully made.Marvelous are Your works,and I know this very well.",
+    "svReference": "Ps 139:13-14"
+  },
+  {
+    "reference": "Proverbs 16:3",
+    "book": "Proverbs",
+    "testament": "gt",
+    "topic": "Herrens vilja",
+    "content": "Commit your works to the LORDand your plans will be achieved.",
+    "svReference": "Ords 16:3"
+  },
+  {
+    "reference": "Ezekiel 36:26",
+    "book": "Ezekiel",
+    "testament": "gt",
+    "topic": "förnyelse",
+    "content": "I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh.",
+    "svReference": "Hes 36:26"
+  },
+  {
+    "reference": "Malachi 3:10",
+    "book": "Malachi",
+    "testament": "gt",
+    "topic": "blessing",
+    "content": "Bring the full tithe into the storehouse, so that there may be food in My house. Test Me in this,” says the LORD of Hosts. “See if I will not open the windows of heaven and pour out for you blessing without measure.",
+    "svReference": "Mal 3:10"
+  },
+  {
+    "reference": "Deuteronomy 6:4-5",
+    "book": "Deuteronomy",
+    "testament": "gt",
+    "topic": "kärlek till Gud",
+    "content": "Hear, O Israel: The LORD our God, the LORD is One. And you shall love the LORD your God with all your heart and with all your soul and with all your strength.",
+    "svReference": "5 Mos 6:4-5"
+  },
+  {
+    "reference": "Isaiah 41:10",
+    "book": "Isaiah",
+    "testament": "gt",
+    "topic": "tröst",
+    "content": "Do not fear, for I am with you;do not be afraid, for I am your God.I will strengthen you; I will surely help you;I will uphold you with My righteous right hand.",
+    "svReference": "Jes 41:10"
+  },
+  {
+    "reference": "Amos 5:24",
+    "book": "Amos",
+    "testament": "gt",
+    "topic": "righteousness",
+    "content": "But let justice roll on like a river,and righteousness like an ever-flowing stream.",
+    "svReference": "Am 5:24"
+  },
+  {
+    "reference": "Psalms 16:11",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "glädje",
+    "content": "You have made known to me the path of life;You will fill me with joy in Your presence,with eternal pleasures at Your right hand.",
+    "svReference": "Ps 16:11"
+  },
+  {
+    "reference": "Isaiah 43:25",
+    "book": "Isaiah",
+    "testament": "gt",
+    "topic": "forgiveness",
+    "content": "I, yes I, am Hewho blots out your transgressions for My own sakeand remembers your sins no more.",
+    "svReference": "Jes 43:25"
+  },
+  {
+    "reference": "Psalms 103:12",
+    "book": "Psalms",
+    "testament": "gt",
+    "topic": "forgiveness",
+    "content": "As far as the east is from the west,so far has He removed our transgressions from us.",
+    "svReference": "Ps 103:12"
+  },
+  {
+    "reference": "Luke 2:11",
+    "book": "Luke",
+    "testament": "nt",
+    "topic": "frälsare",
+    "content": "Today in the city of David a Savior has been born to you. He is Christ the Lord!",
+    "svReference": "Luk 2:11"
+  },
+  {
+    "reference": "Luke 19:10",
+    "book": "Luke",
+    "testament": "nt",
+    "topic": "salvation",
+    "content": "For the Son of Man came to seek and to save the lost.”",
+    "svReference": "Luk 19:10"
+  },
+  {
+    "reference": "John 6:35",
+    "book": "John",
+    "testament": "nt",
+    "topic": "livets bröd",
+    "content": "Jesus answered, “I am the bread of life. Whoever comes to Me will never hunger, and whoever believes in Me will never thirst.",
+    "svReference": "Joh 6:35"
+  },
+  {
+    "reference": "John 8:12",
+    "book": "John",
+    "testament": "nt",
+    "topic": "light",
+    "content": "Once again, Jesus spoke to the people and said, “I am the light of the world. Whoever follows Me will never walk in the darkness, but will have the light of life.”",
+    "svReference": "Joh 8:12"
+  },
+  {
+    "reference": "John 11:25",
+    "book": "John",
+    "testament": "nt",
+    "topic": "the resurrection",
+    "content": "Jesus said to her, “I am the resurrection and the life. Whoever believes in Me will live, even though he dies.",
+    "svReference": "Joh 11:25"
+  },
+  {
+    "reference": "John 15:5",
+    "book": "John",
+    "testament": "nt",
+    "topic": "gemenskap",
+    "content": "I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing.",
+    "svReference": "Joh 15:5"
+  },
+  {
+    "reference": "John 16:33",
+    "book": "John",
+    "testament": "nt",
+    "topic": "peace",
+    "content": "I have told you these things so that in Me you may have peace. In the world you will have tribulation. But take courage; I have overcome the world!”",
+    "svReference": "Joh 16:33"
+  },
+  {
+    "reference": "Acts 1:8",
+    "book": "Acts",
+    "testament": "nt",
+    "topic": "vittnesbörd",
+    "content": "But you will receive power when the Holy Spirit comes upon you, and you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.”",
+    "svReference": "Apg 1:8"
+  },
+  {
+    "reference": "Acts 4:12",
+    "book": "Acts",
+    "testament": "nt",
+    "topic": "salvation",
+    "content": "Salvation exists in no one else, for there is no other name under heaven given to men by which we must be saved.”",
+    "svReference": "Apg 4:12"
+  },
+  {
+    "reference": "Romans 1:16",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "evangelium",
+    "content": "I am not ashamed of the gospel, because it is the power of God for salvation to everyone who believes, first to the Jew, then to the Greek.",
+    "svReference": "Rom 1:16"
+  },
+  {
+    "reference": "Romans 8:1",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "frihet",
+    "content": "Therefore, there is now no condemnation for those who are in Christ Jesus.",
+    "svReference": "Rom 8:1"
+  },
+  {
+    "reference": "Romans 8:38-39",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "Guds kärlek",
+    "content": "For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.",
+    "svReference": "Rom 8:38-39"
+  },
+  {
+    "reference": "Romans 12:1",
+    "book": "Romans",
+    "testament": "nt",
+    "topic": "helgelse",
+    "content": "Therefore I urge you, brothers, on account of God’s mercy, to offer your bodies as living sacrifices, holy and pleasing to God, which is your spiritual service of worship.",
+    "svReference": "Rom 12:1"
+  },
+  {
+    "reference": "1 Corinthians 10:13",
+    "book": "1",
+    "testament": "nt",
+    "topic": "frestelse",
+    "content": "No temptation has seized you except what is common to man. And God is faithful; He will not let you be tempted beyond what you can bear. But when you are tempted, He will also provide an escape, so that you can stand up under it.",
+    "svReference": "1 Kor 10:13"
+  },
+  {
+    "reference": "2 Corinthians 4:16-18",
+    "book": "2",
+    "testament": "nt",
+    "topic": "hope",
+    "content": "Therefore we do not lose heart. Though our outer self is wasting away, yet our inner self is being renewed day by day. For our light and momentary affliction is producing for us an eternal weight of glory that is far beyond comparison. So we fix our eyes not on what is seen, but on what is unseen. For what is seen is temporary, but what is unseen is eternal.",
+    "svReference": "2 Kor 4:16-18"
+  },
+  {
+    "reference": "2 Corinthians 12:9",
+    "book": "2",
+    "testament": "nt",
+    "topic": "grace",
+    "content": "But He said to me, “My grace is sufficient for you, for My power is perfected in weakness.” Therefore I will boast all the more gladly in my weaknesses, so that the power of Christ may rest on me.",
+    "svReference": "2 Kor 12:9"
+  },
+  {
+    "reference": "Galatians 2:20",
+    "book": "Galatians",
+    "testament": "nt",
+    "topic": "korset",
+    "content": "I have been crucified with Christ, and I no longer live, but Christ lives in me. The life I live in the body, I live by faith in the Son of God, who loved me and gave Himself up for me.",
+    "svReference": "Gal 2:20"
+  },
+  {
+    "reference": "Galatians 5:1",
+    "book": "Galatians",
+    "testament": "nt",
+    "topic": "frihet",
+    "content": "It is for freedom that Christ has set us free. Stand firm, then, and do not be encumbered once more by a yoke of slavery.",
+    "svReference": "Gal 5:1"
+  },
+  {
+    "reference": "Ephesians 1:7",
+    "book": "Ephesians",
+    "testament": "nt",
+    "topic": "reconciliation",
+    "content": "In Him we have redemption through His blood, the forgiveness of our trespasses, according to the riches of His grace",
+    "svReference": "Ef 1:7"
+  },
+  {
+    "reference": "Ephesians 4:32",
+    "book": "Ephesians",
+    "testament": "nt",
+    "topic": "forgiveness",
+    "content": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you.",
+    "svReference": "Ef 4:32"
+  },
+  {
+    "reference": "Philippians 4:6-7",
+    "book": "Philippians",
+    "testament": "nt",
+    "topic": "prayer",
+    "content": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.",
+    "svReference": "Fil 4:6-7"
+  },
+  {
+    "reference": "Philippians 4:13",
+    "book": "Philippians",
+    "testament": "nt",
+    "topic": "strength",
+    "content": "I can do all things through Christ who gives me strength.",
+    "svReference": "Fil 4:13"
+  },
+  {
+    "reference": "1 Thessalonians 4:16-17",
+    "book": "1",
+    "testament": "nt",
+    "topic": "återkomst",
+    "content": "For the Lord Himself will descend from heaven with a loud command, with the voice of an archangel, and with the trumpet of God, and the dead in Christ will be the first to rise. After that, we who are alive and remain will be caught up together with them in the clouds to meet the Lord in the air. And so we will always be with the Lord.",
+    "svReference": "1 Tess 4:16-17"
+  },
+  {
+    "reference": "1 Timothy 2:5",
+    "book": "1",
+    "testament": "nt",
+    "topic": "förmedlare",
+    "content": "For there is one God, and there is one mediator between God and men, the man Christ Jesus,",
+    "svReference": "1 Tim 2:5"
+  },
+  {
+    "reference": "2 Timothy 3:16",
+    "book": "2",
+    "testament": "nt",
+    "topic": "Skriften",
+    "content": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness,",
+    "svReference": "2 Tim 3:16"
+  },
+  {
+    "reference": "Titus 3:5",
+    "book": "Titus",
+    "testament": "nt",
+    "topic": "salvation",
+    "content": "He saved us, not by the righteous deeds we had done, but according to His mercy, through the washing of new birthand renewal by the Holy Spirit.",
+    "svReference": "Tit 3:5"
+  },
+  {
+    "reference": "Hebrews 4:12",
+    "book": "Hebrews",
+    "testament": "nt",
+    "topic": "Guds ord",
+    "content": "For the word of God is living and active. Sharper than any double-edged sword, it pierces even to dividing soul and spirit, joints and marrow. It judges the thoughts and intentions of the heart.",
+    "svReference": "Hebr 4:12"
+  },
+  {
+    "reference": "Hebrews 10:24-25",
+    "book": "Hebrews",
+    "testament": "nt",
+    "topic": "församling",
+    "content": "And let us consider how to spur one another on to love and good deeds. Let us not neglect meeting together, as some have made a habit, but let us encourage one another, and all the more as you see the Day approaching.",
+    "svReference": "Hebr 10:24-25"
+  },
+  {
+    "reference": "Hebrews 13:8",
+    "book": "Hebrews",
+    "testament": "nt",
+    "topic": "Kristus",
+    "content": "Jesus Christ is the same yesterday and today and forever.",
+    "svReference": "Hebr 13:8"
+  },
+  {
+    "reference": "1 Peter 1:3",
+    "book": "1",
+    "testament": "nt",
+    "topic": "hope",
+    "content": "Blessed be the God and Father of our Lord Jesus Christ! By His great mercy He has given us new birthinto a living hope through the resurrection of Jesus Christ from the dead,",
+    "svReference": "1 Pet 1:3"
+  },
+  {
+    "reference": "1 John 5:13",
+    "book": "1",
+    "testament": "nt",
+    "topic": "visshet",
+    "content": "I have written these things to you who believe in the name of the Son of God, so that you may know that you have eternal life.",
+    "svReference": "1 Joh 5:13"
+  },
+  {
+    "reference": "Revelation 3:20",
+    "book": "Revelation",
+    "testament": "nt",
+    "topic": "inbjudan",
+    "content": "Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in and dine with him, and he with Me.",
+    "svReference": "Upp 3:20"
+  }
+]

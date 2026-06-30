@@ -1,0 +1,21 @@
+:8080 {
+	@auth path /auth/v1*
+	handle @auth {
+		uri strip_prefix /auth/v1
+		reverse_proxy https://ca-testimony-gotrue.livelyflower-b897116b.swedencentral.azurecontainerapps.io
+	}
+
+	@rest path /rest/v1*
+	handle @rest {
+		uri strip_prefix /rest/v1
+		reverse_proxy https://ca-testimony-postgrest.livelyflower-b897116b.swedencentral.azurecontainerapps.io
+	}
+
+	handle /health {
+		respond "ok" 200
+	}
+
+	handle {
+		respond "testimony API gateway" 200
+	}
+}

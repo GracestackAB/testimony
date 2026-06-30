@@ -1,0 +1,40 @@
+{
+  "name": "testimony-se",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3005 --webpack",
+    "build": "next build --webpack",
+    "start": "next start --port 3005",
+    "lint": "next lint",
+    "ingest:bible": "node scripts/ingest-bible-chunks.mjs",
+    "ingest:bible:full": "node scripts/ingest-bible-helloao.mjs",
+    "test:bible": "npx tsx tests/bible/dates.test.ts && npx tsx tests/bible/verse-extract.test.ts && npx tsx tests/games/bible-quiz.test.ts && npx tsx tests/games/story-adventure.test.ts && npx tsx tests/games/bible-quiz-social.test.ts",
+    "icons": "node scripts/generate-icons-svg.mjs"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^2.4.0",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.103.0",
+    "@types/pg": "^8.20.0",
+    "next": "^16.2.2",
+    "pg": "^8.22.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "resend": "^6.12.2",
+    "stripe": "^14.14.0",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/web-push": "^3.6.4",
+    "autoprefixer": "^10.4.17",
+    "canvas": "^3.2.3",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
