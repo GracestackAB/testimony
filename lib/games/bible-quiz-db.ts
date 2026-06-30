@@ -438,6 +438,20 @@ export type ChallengeListItem = {
   role: "challenger" | "challenged";
 };
 
+type ChallengeRow = {
+  id: string;
+  challenger_id: string;
+  challenged_id: string;
+  locale: string;
+  challenger_score: number | null;
+  challenged_score: number | null;
+  total: number;
+  question_seed: string | null;
+  status: string;
+  created_at: string;
+  expires_at: string;
+};
+
 export async function listChallenges(userId: string): Promise<ChallengeListItem[]> {
   const svc = await createServiceClient();
   const { data } = await svc
@@ -447,14 +461,15 @@ export async function listChallenges(userId: string): Promise<ChallengeListItem[
     .order("created_at", { ascending: false })
     .limit(30);
 
-  if (!data?.length) return [];
+  const rows = (data ?? []) as ChallengeRow[];
+  if (!rows.length) return [];
 
-  const opponentIds = data.map((c) =>
+  const opponentIds = rows.map((c) =>
     c.challenger_id === userId ? c.challenged_id : c.challenger_id
   );
   const profiles = await fetchProfiles(opponentIds);
 
-  return data.map((c) => {
+  return rows.map((c) => {
     const isChallenger = c.challenger_id === userId;
     const oppId = isChallenger ? c.challenged_id : c.challenger_id;
     const p = profiles.get(oppId);
