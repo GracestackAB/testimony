@@ -8,6 +8,8 @@ node_modules
 *.log
 tsconfig.tsbuildinfo
 *.tsbuildinfo
+__pycache__/
+*.pyc
 
 # PWA generated files
 public/sw.js
