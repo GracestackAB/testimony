@@ -63,6 +63,13 @@ function navIcon(path: string) {
           <path d="M12 6v10M9 9h6" />
         </svg>
       );
+    case "/bibel-ai":
+      return (
+        <svg className={ICON_BASE} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 3l8 4v6c0 5-3.5 9-8 10C7.5 22 4 18 4 13V7l8-4z" />
+          <path d="M9 12h6M12 9v6" />
+        </svg>
+      );
     case "/spel":
       return (
         <svg className={ICON_BASE} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -154,6 +161,7 @@ export function MobileMenu({ user, isModerator, pendingCount = 0, userOrgs = [] 
       { href: "/boneamnen", label: n.prayerRequests, kicker: n.prayerRequestsKicker, icon: navIcon("/boneamnen") },
       { href: "/tack", label: n.gratitude, kicker: n.gratitudeKicker, icon: navIcon("/tack") },
       { href: "/dagens-bibeltext", label: n.dailyBible, kicker: n.dailyBibleKicker, icon: navIcon("/dagens-bibeltext") },
+      { href: "/bibel-ai", label: n.bibleAi, kicker: n.bibleAiKicker, icon: navIcon("/bibel-ai") },
       { href: "/spel", label: n.games, kicker: n.gamesKicker, icon: navIcon("/spel") },
       { href: "/plats", label: n.places, kicker: n.placesKicker, icon: navIcon("/plats") },
       { href: "/lovsang", label: n.worship, kicker: n.worshipKicker, icon: navIcon("/lovsang") },

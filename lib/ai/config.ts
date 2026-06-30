@@ -30,7 +30,17 @@ export function chatDeployment(kind: "default" | "bible" | "write" | "moderation
   return (
     byKind[kind] ||
     process.env.AZURE_OPENAI_CHAT_DEPLOYMENT ||
-    "gpt-4o-mini"
+    "gpt-4.1-mini"
+  );
+}
+
+/** Stronger model for Bibel-AI professor mode (falls back to bible deployment). */
+export function chatProfessorDeployment(): string {
+  return (
+    process.env.AZURE_OPENAI_BIBLE_PROFESSOR_DEPLOYMENT ||
+    process.env.AZURE_OPENAI_BIBLE_DEPLOYMENT ||
+    process.env.AZURE_OPENAI_CHAT_DEPLOYMENT ||
+    "gpt-4.1-mini"
   );
 }
 
@@ -53,4 +63,12 @@ export function openRouterModel(
     embed: "openai/text-embedding-3-small",
   };
   return map[kind] || process.env.OPENROUTER_CHAT_MODEL || defaults[kind];
+}
+
+export function openRouterProfessorModel(): string {
+  return (
+    process.env.OPENROUTER_BIBLE_PROFESSOR_MODEL ||
+    process.env.OPENROUTER_BIBLE_MODEL ||
+    "openai/gpt-4o"
+  );
 }

@@ -22,7 +22,8 @@ function deploymentUrl(deployment: string, path: "chat/completions" | "embedding
 
 export async function azureChatCompletion(
   messages: Array<{ role: "system" | "user" | "assistant"; content: string }>,
-  deployment: string
+  deployment: string,
+  options?: { temperature?: number; maxTokens?: number }
 ): Promise<string> {
   const res = await fetch(deploymentUrl(deployment, "chat/completions"), {
     method: "POST",
@@ -30,7 +31,11 @@ export async function azureChatCompletion(
       "api-key": apiKey(),
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ messages, temperature: 0.3 }),
+    body: JSON.stringify({
+      messages,
+      temperature: options?.temperature ?? 0.3,
+      max_tokens: options?.maxTokens ?? 1200,
+    }),
   });
   if (!res.ok) {
     const body = await res.text();

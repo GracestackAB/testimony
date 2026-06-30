@@ -1,14 +1,38 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { answerBibleQuestion } from "@/lib/bible/rag";
+import { answerBibleQuestion, type BibleHistoryTurn } from "@/lib/bible/rag";
+import type { BibleAiMode } from "@/lib/bible/rag-prompts";
 import { isAiConfigured } from "@/lib/ai/client";
 import { BIBLE_AI_HOURLY_LIMIT, checkHourlyRateLimit } from "@/lib/ai/rate-limit";
 import { getLocale } from "@/lib/i18n/server";
 
 export const dynamic = "force-dynamic";
-export const maxDuration = 60;
+export const maxDuration = 90;
 
-const MAX_LEN = 500;
+const MAX_LEN_GUIDE = 500;
+const MAX_LEN_PROFESSOR = 800;
+
+function parseMode(raw: unknown): BibleAiMode {
+  return raw === "professor" ? "professor" : "guide";
+}
+
+function parseHistory(raw: unknown): BibleHistoryTurn[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .filter(
+      (item): item is BibleHistoryTurn =>
+        typeof item === "object" &&
+        item !== null &&
+        (item as BibleHistoryTurn).role !== undefined &&
+        typeof (item as BibleHistoryTurn).content === "string" &&
+        ["user", "assistant"].includes((item as BibleHistoryTurn).role)
+    )
+    .map((item) => ({
+      role: item.role,
+      content: item.content.slice(0, 4000),
+    }))
+    .slice(-8);
+}
 
 export async function POST(req: Request) {
   if (!isAiConfigured()) {
@@ -35,24 +59,27 @@ export async function POST(req: Request) {
     );
   }
 
-  let body: { question?: string };
+  let body: { question?: string; mode?: string; history?: unknown };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "Ogiltig JSON" }, { status: 400 });
   }
 
+  const mode = parseMode(body.mode);
+  const maxLen = mode === "professor" ? MAX_LEN_PROFESSOR : MAX_LEN_GUIDE;
   const question = body.question?.trim();
   if (!question || question.length < 3) {
     return NextResponse.json({ error: "Skriv en fråga (minst 3 tecken)." }, { status: 400 });
   }
-  if (question.length > MAX_LEN) {
-    return NextResponse.json({ error: `Frågan får vara högst ${MAX_LEN} tecken.` }, { status: 400 });
+  if (question.length > maxLen) {
+    return NextResponse.json({ error: `Frågan får vara högst ${maxLen} tecken.` }, { status: 400 });
   }
 
   try {
     const locale = await getLocale();
-    const result = await answerBibleQuestion(question, user.id, locale);
+    const history = parseHistory(body.history);
+    const result = await answerBibleQuestion(question, user.id, locale, mode, history);
     return NextResponse.json({
       ...result,
       rateLimit: { remaining: rate.remaining - 1, limit: rate.limit },

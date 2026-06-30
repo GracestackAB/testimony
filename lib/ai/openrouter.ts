@@ -11,7 +11,8 @@ function apiKey(): string {
 
 export async function chatCompletion(
   messages: Array<{ role: "system" | "user" | "assistant"; content: string }>,
-  model = process.env.OPENROUTER_CHAT_MODEL || "openai/gpt-4o-mini"
+  model = process.env.OPENROUTER_CHAT_MODEL || "openai/gpt-4o-mini",
+  options?: { temperature?: number; maxTokens?: number }
 ): Promise<string> {
   const res = await fetch(`${BASE}/chat/completions`, {
     method: "POST",
@@ -21,7 +22,12 @@ export async function chatCompletion(
       "HTTP-Referer": process.env.NEXT_PUBLIC_SITE_URL || "https://testimony.se",
       "X-Title": "testimony.se",
     },
-    body: JSON.stringify({ model, messages, temperature: 0.3 }),
+    body: JSON.stringify({
+      model,
+      messages,
+      temperature: options?.temperature ?? 0.3,
+      max_tokens: options?.maxTokens ?? 1200,
+    }),
   });
   if (!res.ok) {
     const body = await res.text();
