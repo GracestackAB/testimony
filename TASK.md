@@ -46,3 +46,7 @@
 - [x] `/spel/bibel-quiz` — flervalsquiz från `passages.json`, sv/en, menylänk
 - [x] Bibel Quiz: veckans topplista, nätverkslista, utmaningar + notiser (`0016_bible_quiz_social`)
 - [x] `/spel/liknelser` — AI textäventyr (4 scenarier), teologiska guardrails, migration `0015_game_story_turns`
+- [x] Git-repo initierat lokalt (`main`, 4 commits)
+- [x] Rättvis utmaning: samma frågor via seed (`0017_bible_quiz_fair_play`)
+- [x] Utmana från topplista, profilsök, avböj, returmatch, matchhistorik
+- [x] Deploy prod revision `quizsocial2`
