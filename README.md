@@ -78,28 +78,35 @@ npm run dev
    - `customer.subscription.updated`
    - `customer.subscription.deleted`
 
-## Deploy till Azure
+## Deploy till Azure (prod)
+
+> **Prod körs här — inte Vercel.** `git push` uppdaterar **inte** live-sajten.
 
 ```bash
+az login --tenant ace8b768-ba8f-4023-94bd-d7e75ade6c2a
 set -a && source .env.local && set +a
 ./azure/deploy-azure.sh          # full deploy
 # eller endast web:
 ./azure/redeploy-web.sh          # säkert — alltid med NEXT_PUBLIC build-args
 ```
 
-Se **`docs/DEPLOY.md`** för runbook, vanliga fel (500, Failed to fetch, OAuth) och verifiering.  
+Verifiera efter deploy:
+
+```bash
+curl -sL https://www.testimony.se | grep -o '<header[^>]*>' | head -1
+```
+
+Se **`docs/DEPLOY.md`** för runbook, vanliga fel (500, Failed to fetch, OAuth, fel deploy-mål) och verifiering.  
 `azure/AZURE.md` täcker DNS och infrastruktur.
 
 **Prod-URL:** https://www.testimony.se
 
-## Deploy till Vercel (legacy)
+## ~~Deploy till Vercel~~ (legacy — använd inte)
 
-```bash
-vercel --prod
-# Domän: testimony.se (Loopia → CNAME www → cname.vercel-dns.com, A @ → 76.76.21.21)
-```
+Vercel-projektet `testimony-se` är **inaktivt**. DNS pekar på Azure sedan cutover 2026-06.  
+`vercel --prod` uppdaterar **inte** testimony.se.
 
-Avveckla Vercel efter DNS-cutover till Azure.
+Avveckla Vercel helt (se `TASK.md`).
 
 Env-variabler: se `.env.example`.
 

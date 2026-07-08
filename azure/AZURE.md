@@ -1,7 +1,8 @@
 # testimony.se — Azure Deployment
 
 > RG: `rg-gracestack-testimony-prod` · Region: **swedencentral**  
-> **Deploy-runbook:** [`docs/DEPLOY.md`](../docs/DEPLOY.md) ← läs denna vid varje deploy
+> **Deploy-runbook:** [`docs/DEPLOY.md`](../docs/DEPLOY.md) ← läs denna vid varje deploy  
+> **Prod = Azure.** Vercel-projektet `testimony-se` är legacy och servar inte www.testimony.se.
 
 ## Arkitektur (2026-06)
 

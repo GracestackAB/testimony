@@ -1,5 +1,11 @@
 # testimony.se — Tasks
 
+## 2026-07-08 — iOS PWA safe-area + deploy-dokumentation
+
+- [x] `safe-top` / safe-area CSS för header och mobilmeny (iOS hemskärms-app)
+- [x] Azure-redeploy `ios-safe-area` (prod uppdateras via `./azure/redeploy-web.sh`, inte Vercel)
+- [x] `docs/DEPLOY.md` — tydlig varning: prod = Azure, git push räcker inte
+
 ## 2026-06-24 — Min andakt (privat journal)
 
 - [x] `spiritual_journal_entries` + RLS (8 kategorier)

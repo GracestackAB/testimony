@@ -1,7 +1,36 @@
 # Deploy — testimony.se (Azure)
 
 > **Läsmål:** Undvik de misstag som gav 500 på hela sajten, "Failed to fetch" vid login och trasig Google OAuth.  
-> **Senast verifierat:** 2026-06-22
+> **Senast verifierat:** 2026-07-08
+
+---
+
+## ⚠️ Prod körs på Azure — inte Vercel
+
+| | Azure (prod) | Vercel (legacy, inaktiv) |
+|---|---|---|
+| **URL** | https://www.testimony.se | `testimony-se-*.vercel.app` |
+| **DNS** | `ca-testimony-prod...azurecontainerapps.io` | *pekar inte längre hit* |
+| **Deploy** | `./azure/redeploy-web.sh` | ❌ **Använd inte** |
+| **git push → auto-deploy** | ❌ Nej (manuell Azure-deploy) | ❌ Nej (GitHub-webhook saknas) |
+
+**`git push origin main` uppdaterar INTE prod.** Efter varje kodändring som ska synas live:
+
+```bash
+az login --tenant ace8b768-ba8f-4023-94bd-d7e75ade6c2a
+cd ~/CascadeProjects/testimony
+set -a && source .env.local && set +a
+./azure/redeploy-web.sh
+```
+
+**Verifiera att rätt version är live** (ersätt `safe-top` med vad du deployat):
+
+```bash
+curl -sL https://www.testimony.se | grep -o '<header[^>]*>' | head -1
+# Ska innehålla t.ex. class="safe-top ...
+```
+
+**Incident 2026-07-08:** iOS PWA-fix committades och pushades till GitHub. Vercel CLI visade gammal deploy (71 dagar). Prod oförändrad tills `./azure/redeploy-web.sh` kördes. Orsak: DNS pekar på Azure; Vercel-projektet är kvar men kopplas inte till testimony.se.
 
 ---
 
@@ -35,6 +64,13 @@ psql-testimony-prod        ← Azure PostgreSQL (schema testimony + auth)
 ---
 
 ## Gyllene regler (läs först)
+
+### 0. Prod = Azure Container Apps (aldrig Vercel)
+
+- **DNS** `www.testimony.se` → `ca-testimony-prod` (Azure), inte Vercel.
+- **Vercel-projektet** `testimony-se` finns kvar historiskt men servar **inte** prod.
+- **`git push` räcker inte** — kör alltid `./azure/redeploy-web.sh` (eller `deploy-azure.sh`) efter merge.
+- Cursor/agenter: kontrollera live med `curl` mot `www.testimony.se`, inte Vercel dashboard.
 
 ### 1. Bygg web **alltid** med `--build-arg`
 
@@ -244,6 +280,7 @@ az containerapp logs show -g rg-gracestack-testimony-prod -n ca-testimony-gotrue
 
 | Symptom | Trolig orsak | Åtgärd |
 |---|---|---|
+| Kod pushad, prod oförändrad | Deploy till Vercel / glömt Azure-redeploy | `./azure/redeploy-web.sh`, verifiera med `curl` |
 | Alla sidor 500 | Web image utan `NEXT_PUBLIC_*` build-args | `./azure/redeploy-web.sh` |
 | Login: "Failed to fetch" | CORS på gateway | Uppdatera `nginx.conf`, deploy gateway |
 | Google: `missing redirect URI` | Saknar `GOTRUE_EXTERNAL_GOOGLE_REDIRECT_URI` | `deploy-auth-api.sh` eller manuell env |

@@ -27,7 +27,7 @@ En digital tidning och community där vanliga människor delar vad Gud gör — 
 ```
 ┌─────────────────────────────────────────────────────────┐
 │  Next.js 16 (App Router, RSC) + Tailwind 3 + PWA        │
-│  Azure Container Apps (prod) · Vercel (legacy)          │
+│  Azure Container Apps (prod) · Vercel (legacy, ej DNS)    │
 └───────────────────────────┬─────────────────────────────┘
                             │
         ┌───────────────────┼───────────────────┐
