@@ -242,7 +242,7 @@ export function MobileMenu({ user, isModerator, pendingCount = 0, userOrgs = [] 
         aria-label={m.mainNav}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-5 border-b border-stone-200 flex-shrink-0">
+        <div className="safe-top flex items-center justify-between px-6 py-5 border-b border-stone-200 flex-shrink-0">
           <Link href="/" className="font-serif text-lg font-semibold text-stone-900">
             testimony<span className="text-olive-600">.se</span>
           </Link>
@@ -487,7 +487,7 @@ export function MobileMenu({ user, isModerator, pendingCount = 0, userOrgs = [] 
         </nav>
 
         {/* Footer */}
-        <div className="border-t border-stone-200 bg-parchment/95 px-6 py-4 flex-shrink-0">
+        <div className="safe-bottom border-t border-stone-200 bg-parchment/95 px-6 py-4 flex-shrink-0">
           {user ? (
             <div className="flex flex-col gap-3">
               <Link

@@ -21,6 +21,19 @@ html, body {
   touch-action: manipulation;
 }
 
+/* iOS PWA (standalone): statusfältet ritas över innehållet med
+   black-translucent + viewportFit=cover. Skjut ner headern under notch/klockan. */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-x {
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+}
+.safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
 input, textarea, select {
   font-size: 16px; /* prevents iOS zoom on focus */
 }

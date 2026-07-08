@@ -46,8 +46,8 @@ export async function Header() {
   const unreadMessages = user ? await getMyTotalUnreadMessages() : 0;
 
   return (
-    <header className="border-b border-stone-200 bg-parchment/90 backdrop-blur sticky top-0 z-40">
-      <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <header className="safe-top border-b border-stone-200 bg-parchment/90 backdrop-blur sticky top-0 z-40">
+      <div className="safe-x max-w-6xl mx-auto py-4 flex items-center justify-between">
         <Logo />
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher className="hidden sm:inline-flex" />
