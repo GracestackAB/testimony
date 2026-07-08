@@ -12,6 +12,12 @@ export async function generateMetadata() {
 }
 
 const GAMES = [
+  { slug: "barn", emoji: "🐑", available: true, kids: true },
+  { slug: "barn-minnes", emoji: "🎴", available: true, kids: true },
+  { slug: "barn-ordning", emoji: "📖", available: true, kids: true },
+  { slug: "barn-sant", emoji: "🤔", available: true, kids: true },
+  { slug: "bibel-duell", emoji: "⚔️", available: true },
+  { slug: "bibel-aventyr", emoji: "📜", available: true },
   { slug: "bibel-quiz", emoji: "📖", available: true },
   { slug: "verspussel", emoji: "🧩", available: true },
   { slug: "sant-eller-falskt", emoji: "⚖️", available: true },
@@ -82,9 +88,16 @@ export default async function GamesPage() {
                   {game.emoji}
                 </span>
                 <div className="flex-1 min-w-0">
-                  <h2 className="font-serif text-xl font-semibold text-stone-900 group-hover:text-olive-800">
-                    {card.title}
-                  </h2>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <h2 className="font-serif text-xl font-semibold text-stone-900 group-hover:text-olive-800">
+                      {card.title}
+                    </h2>
+                    {"kids" in game && game.kids && (
+                      <span className="text-xs font-semibold uppercase tracking-wide text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full">
+                        4+
+                      </span>
+                    )}
+                  </div>
                   <p className="text-sm text-stone-600 mt-1 leading-relaxed">
                     {card.description}
                   </p>

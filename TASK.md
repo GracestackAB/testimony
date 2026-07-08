@@ -40,6 +40,21 @@
 - [x] 2026-06-29 — Jämför översättningar (sv/en/he/gr) på dagens bibeltext + Bibel-AI källspråk
 - [x] 2026-06-28 — Andaktsflöde: dagens vers på startsidan, spara till Min andakt, Bibel-AI uppföljningsfrågor
 
+## 2026-07-04 — Barnens bibelspel (4+)
+
+- [x] `/spel/barn` — tryck-spel med emojis, stora knappar, mobilvänligt
+- [x] 16 bibelberättelser, 8 frågor per omgång, sv/en
+- [x] `/spel/bibel-duell` — ungdomsquiz med topplista + 1v1-utmaningar (migration `0018_youth_bible_duel`)
+- [x] `/spel/bibel-aventyr` — vuxet textäventyr (Bibel-krönika): inventarie, tro-mätare, AI, 3 sparplatser (migration `0019_bible_adventure_saves`)
+  - [x] Föremål-användning, bönbön, skriftkodex, milstolpar, slutbetyg, val-ton, dela krönika
+  - [x] Co-op: bjud in vän, växlande turer, notis (migration `0020_bible_adventure_coop`)
+  - [x] D&D-inspirerat: arketypval, dygder, d20-prov, inspiration, XP/nivå, uppdragslogg
+  - [x] Livskraft (HP): skada vid misslyckade slag, vila, läkning via föremål, utmattningsslut
+  - [x] Fiendeporträtt + bestiarium (9 bilder, AI encounterId per scenario)
+  - [x] Engagement: fiende-HP-strid, spänningsmätare, kapitel, kritiska slag, atmosfär
+  - [x] Ultimat förmåga per arketyp (en gång/äventyr), NPC-allierade med porträtt, procedural atmosfärljud (deploy `bibelultimate`)
+  - [x] Allierade ger riktiga bonusar (SV-reduktion, tro/HP vid möte), fly från möte, segerbyte, ljudeffekter, buff-HUD, tärningsanimation, utökad slutstatistik (deploy `bibelcombat`)
+
 ## 2026-06-30 — Spel & Bibel Quiz
 
 - [x] `/spel` — hub för spel (första: Bibel Quiz)

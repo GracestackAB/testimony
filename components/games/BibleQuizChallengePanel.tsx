@@ -35,6 +35,9 @@ type Props = {
   onActiveChallengeLoaded?: (c: ChallengeItem | null) => void;
   lastScore?: number | null;
   showChallengeForm?: boolean;
+  apiBase?: string;
+  gamePath?: string;
+  totalQuestions?: number;
 };
 
 export function BibleQuizChallengePanel({
@@ -42,6 +45,9 @@ export function BibleQuizChallengePanel({
   onActiveChallengeLoaded,
   lastScore,
   showChallengeForm = false,
+  apiBase = "/api/games/bible-quiz",
+  gamePath = "/spel/bibel-quiz",
+  totalQuestions = 10,
 }: Props) {
   const { locale } = useLocale();
   const g = useDict().games.bibleQuiz;
@@ -56,7 +62,7 @@ export function BibleQuizChallengePanel({
   const [needsLogin, setNeedsLogin] = useState(false);
 
   const load = useCallback(async () => {
-    const res = await fetch("/api/games/bible-quiz/challenges", { cache: "no-store" });
+    const res = await fetch(`${apiBase}/challenges`, { cache: "no-store" });
     const data = await res.json();
     if (res.status === 401) {
       setNeedsLogin(true);
@@ -76,7 +82,7 @@ export function BibleQuizChallengePanel({
     }
     void (async () => {
       const res = await fetch(
-        `/api/games/bible-quiz/challenges?id=${encodeURIComponent(activeChallengeId)}`,
+        `${apiBase}/challenges?id=${encodeURIComponent(activeChallengeId)}`,
         { cache: "no-store" }
       );
       const data = await res.json();
@@ -104,7 +110,7 @@ export function BibleQuizChallengePanel({
     setBusy(true);
     setErr(null);
     setMsg(null);
-    const res = await fetch("/api/games/bible-quiz/challenges", {
+    const res = await fetch(`${apiBase}/challenges`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ challengedUserId: userId, locale, playFirst: true }),
@@ -115,7 +121,7 @@ export function BibleQuizChallengePanel({
       setErr(data.error || g.challengeError);
       return;
     }
-    router.push(`/spel/bibel-quiz?challenge=${data.id}`);
+    router.push(`${gamePath}?challenge=${data.id}`);
   }
 
   async function sendChallengeAfterScore(e: React.FormEvent) {
@@ -126,7 +132,7 @@ export function BibleQuizChallengePanel({
     setBusy(true);
     setErr(null);
     setMsg(null);
-    const res = await fetch("/api/games/bible-quiz/challenges", {
+    const res = await fetch(`${apiBase}/challenges`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -149,7 +155,7 @@ export function BibleQuizChallengePanel({
 
   async function decline(challengeId: string) {
     setBusy(true);
-    const res = await fetch("/api/games/bible-quiz/challenges", {
+    const res = await fetch(`${apiBase}/challenges`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ challengeId, action: "decline" }),
@@ -329,7 +335,7 @@ export function BibleQuizChallengePanel({
                       {g.challengeDecline}
                     </button>
                     <Link
-                      href={`/spel/bibel-quiz?challenge=${c.id}`}
+                      href={`${gamePath}?challenge=${c.id}`}
                       className="text-xs font-medium px-3 py-1.5 rounded-full bg-olive-600 text-parchment hover:bg-olive-700"
                     >
                       {g.challengeAccept}
@@ -338,7 +344,7 @@ export function BibleQuizChallengePanel({
                 )}
                 {c.role === "challenger" && c.challengerScore === null && (
                   <Link
-                    href={`/spel/bibel-quiz?challenge=${c.id}`}
+                    href={`${gamePath}?challenge=${c.id}`}
                     className="text-xs font-medium px-3 py-1.5 rounded-full bg-olive-600 text-parchment hover:bg-olive-700"
                   >
                     {g.challengeAwaitingYou}

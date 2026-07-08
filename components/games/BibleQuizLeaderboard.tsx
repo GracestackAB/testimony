@@ -13,7 +13,15 @@ type Board = {
   totalPlayers: number;
 };
 
-export function BibleQuizLeaderboard() {
+export function BibleQuizLeaderboard({
+  apiBase = "/api/games/bible-quiz",
+  gamePath = "/spel/bibel-quiz",
+  totalQuestions = 10,
+}: {
+  apiBase?: string;
+  gamePath?: string;
+  totalQuestions?: number;
+} = {}) {
   const { locale } = useLocale();
   const g = useDict().games.bibleQuiz;
   const router = useRouter();
@@ -28,7 +36,7 @@ export function BibleQuizLeaderboard() {
     setErr(null);
     try {
       const res = await fetch(
-        `/api/games/bible-quiz/leaderboard?scope=${scope}&locale=${locale}`,
+        `${apiBase}/leaderboard?scope=${scope}&locale=${locale}`,
         { cache: "no-store" }
       );
       const data = await res.json();
@@ -51,14 +59,14 @@ export function BibleQuizLeaderboard() {
   async function challengeUser(userId: string) {
     setChallenging(userId);
     try {
-      const res = await fetch("/api/games/bible-quiz/challenges", {
+      const res = await fetch(`${apiBase}/challenges`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ challengedUserId: userId, locale, playFirst: true }),
       });
       const data = await res.json();
       if (res.ok && data.id) {
-        router.push(`/spel/bibel-quiz?challenge=${data.id}`);
+        router.push(`${gamePath}?challenge=${data.id}`);
       }
     } finally {
       setChallenging(null);
@@ -102,7 +110,7 @@ export function BibleQuizLeaderboard() {
           </div>
           <div className="text-right">
             <p className="text-3xl font-bold text-olive-700">{board.myRank.bestScore}</p>
-            <p className="text-xs text-stone-500">/ 10</p>
+            <p className="text-xs text-stone-500">/ {totalQuestions}</p>
           </div>
         </div>
       )}

@@ -9,7 +9,7 @@
     "lint": "next lint",
     "ingest:bible": "node scripts/ingest-bible-chunks.mjs",
     "ingest:bible:full": "node scripts/ingest-bible-helloao.mjs",
-    "test:bible": "npx tsx tests/bible/dates.test.ts && npx tsx tests/bible/verse-extract.test.ts && npx tsx tests/bible/rag-prompts.test.ts && npx tsx tests/games/bible-quiz.test.ts && npx tsx tests/games/verse-puzzle.test.ts && npx tsx tests/games/true-false.test.ts && npx tsx tests/games/memory-pairs.test.ts && npx tsx tests/games/story-adventure.test.ts && npx tsx tests/games/bible-quiz-social.test.ts",
+    "test:bible": "npx tsx tests/bible/dates.test.ts && npx tsx tests/bible/verse-extract.test.ts && npx tsx tests/bible/rag-prompts.test.ts && npx tsx tests/seo/static-routes.test.ts && npx tsx tests/games/bible-quiz.test.ts && npx tsx tests/games/verse-puzzle.test.ts && npx tsx tests/games/true-false.test.ts && npx tsx tests/games/memory-pairs.test.ts && npx tsx tests/games/kids-bible.test.ts && npx tsx tests/games/kids-memory.test.ts && npx tsx tests/games/kids-order.test.ts && npx tsx tests/games/youth-duel.test.ts && npx tsx tests/games/kids-silly.test.ts && npx tsx tests/games/story-adventure.test.ts && npx tsx tests/games/character.test.ts && npx tsx tests/games/health.test.ts && npx tsx tests/games/enemies.test.ts && npx tsx tests/games/engagement.test.ts && npx tsx tests/games/allies.test.ts && npx tsx tests/games/ultimates.test.ts && npx tsx tests/games/combat-plus.test.ts && npx tsx tests/games/bible-adventure.test.ts && npx tsx tests/games/bible-adventure-coop.test.ts && npx tsx tests/games/bible-quiz-social.test.ts",
     "icons": "node scripts/generate-icons-svg.mjs"
   },
   "dependencies": {

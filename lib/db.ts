@@ -284,11 +284,13 @@ class QueryBuilder implements PromiseLike<DbResult> {
         let sql = `INSERT INTO ${ref} (${keys.map(qid).join(", ")}) VALUES ${valueRows}`;
 
         if (this.mutation === "upsert" && this.upsertConflict) {
+          const conflictCols = this.upsertConflict.split(",").map((c) => c.trim());
+          const conflictRef = conflictCols.map(qid).join(", ");
           const updates = keys
-            .filter((k) => k !== this.upsertConflict)
+            .filter((k) => !conflictCols.includes(k))
             .map((k) => `${qid(k)} = EXCLUDED.${qid(k)}`)
             .join(", ");
-          sql += ` ON CONFLICT (${qid(this.upsertConflict)}) DO UPDATE SET ${updates}`;
+          sql += ` ON CONFLICT (${conflictRef}) DO UPDATE SET ${updates}`;
         }
 
         if (this.returning || this.columns !== "*") {

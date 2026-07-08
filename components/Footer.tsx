@@ -18,6 +18,9 @@ export async function Footer() {
             <li><Link href="/vittnesbord">{t.nav.testimonies}</Link></li>
             <li><Link href="/bonesvar">{t.nav.prayerAnswers}</Link></li>
             <li><Link href="/boneamnen">{t.nav.prayerRequests}</Link></li>
+            <li><Link href="/dagens-bibeltext">{t.nav.dailyBible}</Link></li>
+            <li><Link href="/bibel-ai">{t.nav.bibleAi}</Link></li>
+            <li><Link href="/spel">{t.nav.games}</Link></li>
             <li><Link href="/plats">{t.nav.places}</Link></li>
             <li><Link href="/volontar">{t.nav.volunteer}</Link></li>
             <li><Link href="/sok">{t.nav.network}</Link></li>
