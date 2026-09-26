@@ -24,6 +24,8 @@ const EN_PATH_ALIASES: Record<string, string> = {
   "/my-feed": "/flode",
   "/groups": "/grupper",
   "/communities": "/grupper",
+  "/cell-groups": "/cellgrupper",
+  "/cell-groups/new": "/cellgrupper/nya",
   "/account": "/konto",
   "/spiritual-journal": "/min-andakt",
   "/my-devotion": "/min-andakt",
@@ -64,13 +66,15 @@ export async function middleware(request: NextRequest) {
   }
 
   const alias = EN_PATH_ALIASES[url.pathname];
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-pathname", alias || url.pathname);
+
   if (alias) {
     url.pathname = alias;
-    return NextResponse.rewrite(url);
+    return NextResponse.rewrite(url, {
+      request: { headers: requestHeaders },
+    });
   }
-
-  const requestHeaders = new Headers(request.headers);
-  requestHeaders.set("x-pathname", url.pathname);
 
   let supabaseResponse = NextResponse.next({
     request: { headers: requestHeaders },

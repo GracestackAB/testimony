@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -7,11 +8,13 @@ import { ToastProvider } from "@/components/toast/ToastProvider";
 import { LocaleProvider } from "@/lib/i18n/client";
 import { getDictionary, getLocale } from "@/lib/i18n/server";
 import { siteUrl } from "@/lib/seo/config";
+import { canonicalUrl } from "@/lib/seo/canonical";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   const t = getDictionary(locale);
   const url = siteUrl();
+  const canonical = canonicalUrl(url, (await headers()).get("x-pathname"));
   const ogLocale = locale === "en" ? "en_GB" : "sv_SE";
 
   return {
@@ -24,11 +27,11 @@ export async function generateMetadata(): Promise<Metadata> {
     keywords: t.meta.siteKeywords,
     applicationName: "testimony.se",
     alternates: {
-      canonical: "/",
+      canonical,
       languages: {
-        "sv-SE": url,
-        "en-GB": url,
-        "x-default": url,
+        "sv-SE": canonical,
+        "en-GB": canonical,
+        "x-default": canonical,
       },
     },
     robots: {
@@ -39,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       siteName: "testimony.se",
-      url,
+      url: canonical,
       title: t.meta.siteTitle,
       description: t.meta.siteDescription,
       locale: ogLocale,

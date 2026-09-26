@@ -1,5 +1,6 @@
 import { BibleAiApp } from "@/components/bible/BibleAiApp";
 import { getDictionary, getLocale } from "@/lib/i18n/server";
+import { siteUrl } from "@/lib/seo/config";
 import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -15,6 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
         : ["bible ai", "bible professor", "scripture questions", "christian ai"]),
     ],
     openGraph: {
+      url: new URL("/bibel-ai", siteUrl()).toString(),
       title: `${g.title} · testimony.se`,
       description: g.subtitle,
     },

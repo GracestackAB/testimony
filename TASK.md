@@ -1,5 +1,19 @@
 # testimony.se — Tasks
 
+## 2026-09-26 — Canonical URLs and support checkout
+
+- [x] Generate page-specific canonical, alternate and Open Graph URLs, including English aliases.
+- [x] Verify the production build and publish the metadata fix to Azure (`seo-20260926`): 46 live metadata checks passed, including all 37 sitemap URLs; all 149 existing routes preserved.
+- [x] Restore the inactive Stripe support product and verify all three monthly amounts with unpaid, expired test sessions.
+
+## 2026-07-08 — Cellgrupper (privata grupper + inbjudan)
+
+- [x] Migration `0021_cell_groups` (cell_groups, members, invites) — körd på Azure PG
+- [x] `/cellgrupper` — lista, `/cellgrupper/nya` — skapa, `/cellgrupper/[slug]` — medlemmar + inbjudningslänkar
+- [x] `/bjud-in-cell/[token]` — acceptera inbjudan
+- [x] Production cell-group creation and leadership verified.
+- [x] Azure-redeploy cellgrupper
+
 ## 2026-07-08 — iOS PWA safe-area + deploy-dokumentation
 
 - [x] `safe-top` / safe-area CSS för header och mobilmeny (iOS hemskärms-app)

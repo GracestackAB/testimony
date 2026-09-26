@@ -31,7 +31,7 @@ const failRoll = {
   dc: 14,
   success: false,
   inspiration: false,
-  critical: null as const,
+  critical: null,
 };
 const afterWisdom = appendRollToState(wisdomBuff, failRoll);
 assert.equal(afterWisdom.ultimateBuff, null);
@@ -49,7 +49,7 @@ const shieldRoll = {
   dc: 12,
   success: false,
   inspiration: false,
-  critical: null as const,
+  critical: null,
 };
 const afterShield = appendRollToState(shielded, shieldRoll);
 assert.equal(afterShield.health, guardian.health);
@@ -62,7 +62,7 @@ assert.equal(mercy.ultimateBuff, "mercy_strike");
 
 const withEnemy = {
   ...mercy,
-  activeEncounter: "ahab" as const,
+  activeEncounter: "king_ahab" as const,
   enemyHealth: 30,
   enemyMaxHealth: 30,
 };
@@ -74,7 +74,7 @@ const hitRoll = {
   dc: 12,
   success: true,
   inspiration: false,
-  critical: null as const,
+  critical: null,
 };
 const afterMercy = appendRollToState(withEnemy, hitRoll);
 const hit = afterMercy.chronicle.find((e) => e.kind === "enemy_hit");

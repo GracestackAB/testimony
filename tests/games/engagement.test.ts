@@ -39,7 +39,7 @@ const roll = {
   dc: 12,
   success: true,
   inspiration: false,
-  critical: null as const,
+  critical: null,
 };
 assert.ok(damageToEnemy(roll) >= 3);
 

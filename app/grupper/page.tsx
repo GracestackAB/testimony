@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
+import { getUserCellGroups } from "@/lib/cell-group";
 import { getDictionary, getLocale } from "@/lib/i18n/server";
 
 export const revalidate = 120;
@@ -14,11 +15,18 @@ export default async function GroupsPage() {
   const locale = await getLocale();
   const t = getDictionary(locale);
   const supabase = await createClient();
-  const { data } = await supabase
-    .from("organizations")
-    .select("id, slug, name, type, city, description")
-    .eq("is_published", true)
-    .order("name");
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const [{ data }, cellGroups] = await Promise.all([
+    supabase
+      .from("organizations")
+      .select("id, slug, name, type, city, description")
+      .eq("is_published", true)
+      .order("name"),
+    user ? getUserCellGroups(user.id) : Promise.resolve([]),
+  ]);
 
   const orgs = data ?? [];
 
@@ -31,6 +39,36 @@ export default async function GroupsPage() {
         <h1 className="font-serif text-4xl md:text-5xl font-semibold text-stone-900">{t.groups.title}</h1>
         <p className="mt-3 text-stone-600 max-w-2xl mx-auto">{t.groups.subtitle}</p>
       </header>
+
+      <section className="mb-12 p-6 rounded-xl border border-olive-200 bg-olive-50/50">
+        <h2 className="font-serif text-2xl font-semibold text-stone-900 mb-2">{t.groups.cellGroupsTitle}</h2>
+        <p className="text-stone-600 mb-4 text-sm">{t.groups.cellGroupsSubtitle}</p>
+        {user ? (
+          <div className="flex flex-wrap gap-3 items-center">
+            <Link
+              href="/cellgrupper"
+              className="px-4 py-2 rounded-full bg-olive-600 text-parchment text-sm hover:bg-olive-700 font-medium"
+            >
+              {t.groups.myCellGroups}
+            </Link>
+            <Link
+              href="/cellgrupper/nya"
+              className="px-4 py-2 rounded-full border border-olive-600 text-olive-800 text-sm hover:bg-olive-100 font-medium"
+            >
+              + {t.groups.createCellGroup}
+            </Link>
+            {cellGroups.length > 0 && (
+              <span className="text-sm text-stone-500">
+                {cellGroups.length} {locale === "en" ? "group(s)" : "grupp(er)"}
+              </span>
+            )}
+          </div>
+        ) : (
+          <Link href="/login?next=/cellgrupper" className="text-olive-700 font-medium underline text-sm">
+            {t.groups.loginForCellGroups}
+          </Link>
+        )}
+      </section>
 
       {orgs.length === 0 ? (
         <p className="text-center text-stone-500 italic">{t.groups.empty}</p>

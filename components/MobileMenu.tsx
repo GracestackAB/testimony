@@ -336,6 +336,27 @@ export function MobileMenu({ user, isModerator, pendingCount = 0, userOrgs = [] 
                 <span className="text-olive-700">→</span>
               </Link>
               <Link
+                href="/cellgrupper"
+                className={`mt-2 flex items-center gap-3 rounded-xl p-3 border transition-colors ${
+                  pathname.startsWith("/cellgrupper")
+                    ? "border-olive-300 bg-olive-50"
+                    : "border-stone-200 bg-parchment hover:bg-stone-50"
+                }`}
+              >
+                <span className="w-11 h-11 rounded-full bg-olive-100 flex items-center justify-center text-lg">
+                  ✝️
+                </span>
+                <span className="flex-1 min-w-0">
+                  <span className="block font-serif text-base font-semibold text-stone-900 truncate">
+                    {dict.cellGroups.title}
+                  </span>
+                  <span className="block text-xs text-stone-500 truncate">
+                    {dict.groups.cellGroupsSubtitle.slice(0, 48)}…
+                  </span>
+                </span>
+                <span className="text-olive-700">→</span>
+              </Link>
+              <Link
                 href="/min-andakt"
                 className={`mt-2 flex items-center gap-3 rounded-xl p-3 border transition-colors ${
                   pathname.startsWith("/min-andakt")

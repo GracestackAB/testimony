@@ -66,6 +66,7 @@ const afterRoll = appendRollToState(state, {
   dc: 12,
   success: true,
   inspiration: false,
+  critical: null,
 });
 assert.ok(afterRoll.xp > state.xp);
 assert.ok(afterRoll.chronicle.some((e) => e.kind === "roll"));

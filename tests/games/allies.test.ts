@@ -25,6 +25,7 @@ const withAlly = applyTurnResult(state, {
   faithDelta: 0,
   ended: false,
   reflection: null,
+  scriptureNote: null,
   allyId: "obadiah",
 });
 
@@ -41,6 +42,7 @@ const departed = applyTurnResult(withAlly, {
   faithDelta: 0,
   ended: false,
   reflection: null,
+  scriptureNote: null,
   allyId: null,
 });
 

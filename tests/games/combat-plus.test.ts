@@ -37,6 +37,7 @@ const withAlly = applyTurnResult(damaged, {
   faithDelta: 0,
   ended: false,
   reflection: null,
+  scriptureNote: null,
   allyId: "widow_zarephath",
 });
 assert.equal(withAlly.faith, damaged.faith + 3);
